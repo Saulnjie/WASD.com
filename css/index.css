@@ -1,0 +1,337 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.contain {
+  display: grid;
+  grid-template-areas:
+    "box1 box1 box2 box3"
+    "nav nav nav nav";
+}
+
+.logo {
+  grid-area: box1;
+}
+input {
+  padding: 0 8px;
+  border-radius: 5px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.top-header {
+  background-color: #1a202c;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.header__content {
+  width: 1200px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  margin-bottom: 10px;
+  column-gap: 50px;
+}
+
+.menu-actions ul {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding-left: 0px;
+}
+
+.menu-actions ul li {
+  margin: 0 8px;
+}
+
+.menu-actions i {
+  margin-right: 8px;
+}
+
+.searchbar {
+  width: 500px;
+  height: 50px;
+  align-self: center;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  background-color: #2d3748;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+  max-width: 1200px;
+  padding-left: 0px;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+main section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.home-banner {
+  display: flex;
+  align-items: flex-end;
+  background-image: url("../img/Background.jpg");
+  background-position: 50% 35%;
+  width: 100%;
+  height: 400px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-banner-button {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: -50px;
+  margin-top: 30px;
+}
+
+button {
+  height: 50px;
+  width: 200px;
+  margin: 20px;
+  margin-bottom: 0px;
+  background-color: #48bb78;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+h1 {
+  color: #48bb78;
+  top: 50px;
+  left: 300px;
+  font-size: 4rem;
+  margin: 0;
+}
+main .home-banner h2 {
+  color: white;
+  font-size: 2rem;
+}
+
+.banner-img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sell-game-banner {
+  position: relative;
+  background-image: url(../img/pexels-cottonbro-4842564.jpg);
+  background-position: 0% 80%;
+  width: 1120px;
+  height: 400px;
+  margin: 0 auto 0 auto;
+  color: white;
+  font-weight: bold;
+  justify-content: flex-start;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.sell-game-banner h2 {
+  margin-left: 60px;
+  margin-top: 40px;
+}
+.sell-game-button {
+  height: 50px;
+  width: 300px;
+  margin: 20px;
+  background-color: #48bb78;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  position: absolute;
+  top: 100px;
+  left: 40px;
+}
+
+.genere-h2 {
+  text-align: center;
+}
+
+.game-menu {
+  display: flex;
+  background-color: white;
+  width: 1200px;
+  height: 300px;
+  color: #48bb78;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: 0 auto 0 auto;
+}
+
+.game-menu div {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #1a202c;
+  background-color: #1a202c;
+  border-radius: 180px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.product-background {
+  background-color: #ebebeb;
+  width: 100%;
+  height: 600px;
+  display: grid;
+  grid-template-areas:
+    " product-h2 product-h2 product-h2 product-h2 product-h2"
+    "box1 box2 box3 box4 box5";
+}
+
+.card1 {
+  display: flex;
+  width: 300px;
+  height: 400px;
+  background-color: red;
+  border: solid 2px black;
+  grid-area: box1;
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/a/a9/Wrath_of_the_Lich_King.jpg");
+}
+
+.card2 {
+  display: flex;
+  width: 300px;
+  height: 400px;
+  background-color: red;
+  border: solid 2px black;
+  grid-area: box2;
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/a/a9/Wrath_of_the_Lich_King.jpg");
+}
+
+.card3 {
+  display: flex;
+  width: 300px;
+  height: 400px;
+  background-color: red;
+  border: solid 2px black;
+  grid-area: box3;
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/a/a9/Wrath_of_the_Lich_King.jpg");
+}
+
+.card4 {
+  display: flex;
+  width: 300px;
+  height: 400px;
+  background-color: red;
+  border: solid 2px black;
+  grid-area: box4;
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/a/a9/Wrath_of_the_Lich_King.jpg");
+}
+
+.card5 {
+  display: flex;
+  width: 300px;
+  height: 400px;
+  background-color: red;
+  border: solid 2px black;
+  grid-area: box5;
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/a/a9/Wrath_of_the_Lich_King.jpg");
+}
+
+.product-h2 {
+  text-align: center;
+  display: inline-block;
+  grid-area: product-h2;
+}
+
+.product div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.product {
+  display: flex;
+}
+
+.user-review-h2 {
+  text-align: center;
+}
+
+.reviews {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  column-gap: 100px;
+  background-color: white;
+  width: 100%;
+  height: 600px;
+  font-size: 20px;
+}
+
+.review2 {
+  grid-row: 1 / 3;
+  grid-column: 2;
+}
+
+.review1 {
+  margin-left: 350px;
+}
+.review3 {
+  margin-left: 350px;
+}
+
+.quote-author {
+  font-style: italic;
+}
+
+footer {
+  background-color: #1a202c;
+  width: 100%;
+  height: 980px;
+  color: white;
+}
+
+footer p {
+  text-align: center;
+  font-size: 10rem;
+}
+
+@media (max-width: 1200px) {
+  /*desktop*/
+}
+
+@media (max-width: 991px) {
+  /*tablet*/
+  h1 {
+    color: pink;
+  }
+}
+
+@media (max-width: 767px) {
+  /*mobile*/
+}
