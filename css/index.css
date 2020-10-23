@@ -124,6 +124,20 @@ button {
   border-radius: 5px;
   font-weight: bold;
 }
+.buynow {
+  height: 50px;
+  width: 120px;
+  margin: 20px;
+  margin-bottom: 0px;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  background-color: #48bb78;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
 
 h1 {
   color: #48bb78;
@@ -145,8 +159,9 @@ main .home-banner h2 {
 
 .sell-game-banner {
   position: relative;
-  background-image: url(../img/pexels-cottonbro-4842564.jpg);
-  background-position: 0% 80%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   width: 1120px;
   height: 400px;
   margin: 0 auto 0 auto;
@@ -155,6 +170,24 @@ main .home-banner h2 {
   justify-content: flex-start;
   margin-top: 70px;
   margin-bottom: 70px;
+  animation-name: slider;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slider {
+  0% {
+    background-image: url(../img/pexels-cottonbro-4842564.png);
+  }
+  33% {
+    background-image: url(../img/Trondado);
+  }
+  66% {
+    background-image: url(../img/Tronado2);
+  }
+  100% {
+    background-image: url(../img/pexels-cottonbro-4842564.png);
+  }
 }
 
 .sell-game-banner h2 {
@@ -177,6 +210,11 @@ main .home-banner h2 {
 
 .genere-h2 {
   text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 .game-menu {
@@ -205,25 +243,27 @@ main .home-banner h2 {
   width: 100%;
   height: 600px;
   display: grid;
+  grid-gap: 10px;
   grid-template-areas:
-    " product-h2 product-h2 product-h2 product-h2 product-h2"
-    "box1 box2 box3 box4 box5";
+    "product-h2 product-h2 product-h2 product-h2 product-h2"
+    "box1 box2 box3 box4 box5"
+    "box6 box7 box8 box9 box10";
 }
 
 .card1 {
-  display: flex;
-  width: 300px;
-  height: 400px;
+  width: 255px;
+  height: 360px;
   background-color: red;
   border: solid 2px black;
   grid-area: box1;
-  background-image: url("https://upload.wikimedia.org/wikipedia/en/a/a9/Wrath_of_the_Lich_King.jpg");
+  background-image: url(../img/Trondado);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .card2 {
-  display: flex;
-  width: 300px;
-  height: 400px;
+  width: 255px;
+  height: 360px;
   background-color: red;
   border: solid 2px black;
   grid-area: box2;
@@ -232,18 +272,19 @@ main .home-banner h2 {
 
 .card3 {
   display: flex;
-  width: 300px;
-  height: 400px;
+  width: 255px;
+  height: 360px;
   background-color: red;
   border: solid 2px black;
   grid-area: box3;
-  background-image: url("https://upload.wikimedia.org/wikipedia/en/a/a9/Wrath_of_the_Lich_King.jpg");
+  background-image: url(../img/Tronado2);
+  background-position: 40% 50%;
+  background-repeat: no-repeat;
 }
 
 .card4 {
-  display: flex;
-  width: 300px;
-  height: 400px;
+  width: 255px;
+  height: 360px;
   background-color: red;
   border: solid 2px black;
   grid-area: box4;
@@ -251,13 +292,70 @@ main .home-banner h2 {
 }
 
 .card5 {
-  display: flex;
-  width: 300px;
-  height: 400px;
+  width: 255px;
+  height: 360px;
   background-color: red;
   border: solid 2px black;
   grid-area: box5;
-  background-image: url("https://upload.wikimedia.org/wikipedia/en/a/a9/Wrath_of_the_Lich_King.jpg");
+  background-image: url(../img/Trondado);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.price1 {
+  width: 260px;
+  height: 100px;
+  grid-area: box6;
+  background-color: #1a202c;
+  position: relative;
+  color: white;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+}
+.price2 {
+  width: 260px;
+  height: 100px;
+  grid-area: box7;
+  background-color: #1a202c;
+  position: relative;
+  color: white;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+}
+.price3 {
+  width: 260px;
+  height: 100px;
+  grid-area: box8;
+  background-color: #1a202c;
+  position: relative;
+  color: white;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+}
+.price4 {
+  width: 260px;
+  height: 100px;
+  grid-area: box9;
+  background-color: #1a202c;
+  position: relative;
+  color: white;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+}
+.price5 {
+  width: 260px;
+  height: 100px;
+  grid-area: box10;
+  background-color: #1a202c;
+  position: relative;
+  color: white;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
 }
 
 .product-h2 {
@@ -266,16 +364,12 @@ main .home-banner h2 {
   grid-area: product-h2;
 }
 
-.product div {
+/* .product div {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   margin: 20px;
-}
-
-.product {
-  display: flex;
-}
+} */
 
 .user-review-h2 {
   text-align: center;
@@ -312,13 +406,75 @@ main .home-banner h2 {
 footer {
   background-color: #1a202c;
   width: 100%;
-  height: 980px;
+  height: 680px;
   color: white;
+  position: relative;
 }
 
-footer p {
-  text-align: center;
-  font-size: 10rem;
+.footer-bottom {
+  display: grid;
+  width: 70%;
+  height: 300px;
+  grid-template-areas: "box1 box2 box3 box4";
+  bottom: 50px;
+  grid-gap: 10px;
+  font-size: 20px;
+  display: flex;
+  margin: auto;
+  position: absolute;
+  left: 275px;
+}
+
+.footer-paragraph1 {
+  display: flex;
+  flex-direction: column;
+  grid-area: box1;
+  width: 300px;
+  justify-content: center;
+  padding: auto;
+}
+
+.footer-paragraph2 {
+  display: flex;
+  flex-direction: column;
+  grid-area: box2;
+  width: 300px;
+  justify-content: center;
+  padding: auto;
+}
+
+.footer-paragraph3 {
+  display: flex;
+  flex-direction: column;
+  grid-area: box3;
+  width: 300px;
+  justify-content: center;
+  padding: auto;
+}
+
+.footer-logo {
+  display: flex;
+  width: 300px;
+  grid-area: box4;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+}
+
+.footer-top {
+  height: 350px;
+  width: 70%;
+  position: absolute;
+  left: 275px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.searchbar-footer {
+  width: 400px;
+  height: 40px;
 }
 
 @media (max-width: 1200px) {
@@ -334,4 +490,54 @@ footer p {
 
 @media (max-width: 767px) {
   /*mobile*/
+}
+
+.about-container {
+  width: 1400px;
+  height: 900px;
+  display: grid;
+  grid-template-areas:
+    "box1 box1 box1 box2 box2 box2"
+    "box3 box3 box4 box4 box5 box5";
+  margin: auto;
+  margin-top: 100px;
+}
+
+.aboutus {
+  grid-area: box1;
+}
+
+.ourgoals {
+  grid-area: box2;
+}
+
+.about-oslo {
+  width: 466.66px;
+  height: 500px;
+  grid-area: box3;
+}
+
+.about-banjul {
+  width: 466.66px;
+  height: 500px;
+  grid-area: box4;
+}
+
+.about-amsterdam {
+  width: 466.66px;
+  height: 500px;
+  grid-area: box5;
+}
+
+.aboutus-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.aboutus-paragraph {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 30px;
 }
