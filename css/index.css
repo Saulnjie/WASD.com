@@ -1,3 +1,7 @@
+:root {
+  --primary-green: #48bb78;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -17,9 +21,18 @@ ul {
 .logo {
   grid-area: box1;
 }
-input {
+input,
+textarea,
+select {
   padding: 0 8px;
   border-radius: 5px;
+  border: 1px solid #e2e8f0;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px #a0aec0;
 }
 
 header {
@@ -123,7 +136,7 @@ button {
   width: 200px;
   margin: 20px;
   margin-bottom: 0px;
-  background-color: #48bb78;
+  background-color: var(--primary-green);
   color: white;
   border: none;
   border-radius: 5px;
@@ -137,7 +150,7 @@ button {
   position: absolute;
   top: 1px;
   right: 1px;
-  background-color: #48bb78;
+  background-color: var(--primary-green);
   color: white;
   border: none;
   border-radius: 5px;
@@ -145,7 +158,7 @@ button {
 }
 
 h1 {
-  color: #48bb78;
+  color: var(--primary-green);
   top: 50px;
   left: 300px;
   font-size: 4rem;
@@ -199,7 +212,7 @@ h1 {
   height: 50px;
   width: 300px;
   margin: 20px;
-  background-color: #48bb78;
+  background-color: var(--primary-green);
   color: white;
   border: none;
   border-radius: 5px;
@@ -220,10 +233,10 @@ a {
 
 .game-menu {
   display: flex;
-  background-color: #white;
+  background-color: white;
   width: 1200px;
   height: 300px;
-  color: #48bb78;
+  color: var(--primary-green);
   justify-content: space-evenly;
   text-align: center;
   margin: 0 auto 0 auto;
@@ -374,10 +387,6 @@ a {
 
 .user-review-h2 {
   text-align: center;
-}
-
-.message-input {
-  border: none;
 }
 
 .reviews {
@@ -533,12 +542,6 @@ main .sellgame-banner h2 {
   margin-bottom: 30px;
 }
 
-.sellgame-container h3 {
-  width: 630px;
-  position: relative;
-  left: 390px;
-}
-
 .description-paragraph {
   font-size: 16px;
   width: 1120px;
@@ -607,7 +610,7 @@ main .sellgame-banner h2 {
 .publish-game-button {
   height: 75px;
   width: 300px;
-  background-color: #48bb78;
+  background-color: var(--primary-green);
   color: white;
   border: none;
   border-radius: 5px;
@@ -615,10 +618,6 @@ main .sellgame-banner h2 {
   position: relative;
   bottom: 484px;
   left: 1050px;
-}
-
-input {
-  border: none;
 }
 
 /* CONTACT US */
@@ -756,12 +755,9 @@ h3 {
 /* BUYGAME-PAGE */
 
 .buygame-container {
-  display: grid;
-  grid-template-areas:
-    "card1"
-    "card2"
-    "card3"
-    "card4";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #f5f5f5;
 }
 
@@ -777,7 +773,6 @@ h3 {
 .buygame-container h3 {
   width: 600px;
   font-size: 26px;
-  margin-left: 20px;
   color: #707070;
   margin-top: 0px;
 }
@@ -876,115 +871,89 @@ hr {
   font-size: 3rem;
 }
 
-.gamecard1 {
+.game-card {
   display: flex;
   flex-direction: column;
-  width: 80%;
-  height: 350px;
-  grid-area: card1;
+  padding: 20px 0;
+  border-bottom: 1px solid gray;
 }
-.gameimage1 {
+
+.game-image-container > * + * {
+  margin-left: 20px;
+}
+
+.game-card i {
+  color: green;
+}
+
+.game-card h3 {
+  margin-bottom: 0;
+}
+
+.game-card:last-child {
+  border-bottom: none;
+}
+
+.game-image-container {
   display: flex;
-  grid-area: card1;
   align-self: flex-start;
 }
 
-.gameprice1 {
+.game-price img {
+  height: 60px;
+}
+
+.buy-container {
   display: flex;
+  flex-direction: column;
   align-self: flex-end;
-  grid-area: card1;
+  align-items: flex-end;
+}
+.buy-container button {
+  margin: 0;
 }
 
-.gamecard2 {
-  display: flex;
-  flex-direction: row;
-  width: 80%;
-  height: 350px;
-  grid-area: card2;
+.quantity-picker-container button {
+  height: unset;
+  width: unset;
+  background-color: black;
+  color: white;
+  height: 30px;
+  width: 30px;
+  margin: 0;
+}
+.quantity-picker-container input {
+  width: 20px;
+  height: 30px;
 }
 
-.gameimage2 {
-  display: flex;
-  grid-area: card2;
-  align-self: flex-start;
-}
-.gameprice2 {
-  display: flex;
-  align-self: flex-end;
-  grid-area: card2;
+.quantity-picker-container button i {
+  color: white;
 }
 
-.gamecard3 {
+.info-container {
   display: flex;
-  flex-direction: row;
-  width: 80%;
-  height: 350px;
-  grid-area: card3;
+  flex-direction: column;
 }
 
-.gameimage3 {
+.stock-and-quantity {
   display: flex;
-  grid-area: card3;
-  align-self: flex-start;
+  justify-content: space-between;
+  margin-top: auto;
 }
 
-.gameprice3 {
-  display: flex;
-  align-self: flex-end;
-  grid-area: card3;
+.stock-info__check-icon-container {
+  background-color: var(--primary-green);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  border-radius: 3px;
 }
-.gamecard4 {
-  display: flex;
-  flex-direction: row;
-  width: 80%;
-  height: 350px;
-  grid-area: card4;
-}
-
-.gameimage4 {
-  display: flex;
-  grid-area: card4;
-  align-self: flex-start;
+.stock-info__check-icon-container i {
+  color: white;
 }
 
-.gameprice4 {
-  display: flex;
-  align-self: flex-end;
-  grid-area: card4;
-}
-
-.buynow1 {
-  height: 70px;
-  width: 200px;
-  grid-area: card1;
-  align-self: flex-end;
-}
-
-.buynow2 {
-  height: 70px;
-  width: 200px;
-  grid-area: card2;
-  align-self: flex-end;
-}
-.buynow3 {
-  height: 70px;
-  width: 200px;
-  grid-area: card3;
-  align-self: flex-end;
-}
-.buynow4 {
-  height: 70px;
-  width: 200px;
-  grid-area: card4;
-  align-self: flex-end;
-}
-hr {
-  width: 125%;
-  height: 2px;
-  border: none;
-  background-color: #707070;
-  opacity: 60%;
-}
 /* MEDIA QUERIES */
 
 @media (max-width: 1200px) {
