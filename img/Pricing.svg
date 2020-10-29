@@ -1,0 +1,8 @@
+<svg id="Pricing" xmlns="http://www.w3.org/2000/svg" width="123" height="84" viewBox="0 0 123 84">
+  <text id="_29" data-name="29" transform="translate(64 63)" fill="#707070" font-size="60" font-family="Poppins-Regular, Poppins"><tspan x="-36.15" y="0">29</tspan></text>
+  <text id="_99_" data-name="99
+" transform="translate(110 30)" fill="#707070" font-size="20" font-family="Poppins-Regular, Poppins"><tspan x="-12.6" y="0">99</tspan><tspan x="0" y="17"></tspan></text>
+  <g id="Money_sign" data-name="Money sign" transform="translate(0 36)">
+    <path id="Icon_material-euro-symbol" data-name="Icon material-euro-symbol" d="M21.833,26.889a9.36,9.36,0,0,1-8.32-5.056h8.32V18.944H12.56a9.085,9.085,0,0,1,0-2.889h9.273V13.167h-8.32a9.371,9.371,0,0,1,14.43-2.788L30.5,7.822A12.981,12.981,0,0,0,9.584,13.167H4.5v2.889H8.92a12.08,12.08,0,0,0,0,2.889H4.5v2.889H9.584A12.981,12.981,0,0,0,30.5,27.178l-2.571-2.557a9.252,9.252,0,0,1-6.1,2.268Z" transform="translate(-4.5 -4.5)" fill="#707070"/>
+  </g>
+</svg>

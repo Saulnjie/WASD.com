@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="WASD.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/91d0eac963.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Welcome to WASD</title>
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <div class="header__content">
+          <a href="index.html">
+            <img src="img/logo.svg" alt="logo" />
+          </a>
+          <!-- TODO: Do I use absolute/relative do add the horoglass to the inside of my search bar? -->
+          <input
+            class="searchbar"
+            type="text"
+            placeholder="Red Dead Redemption 2, World of Warcraft, GTA…"
+          />
+          <div class="menu-actions">
+            <ul>
+              <li><i class="fas fa-euro-sign"></i>Balance</li>
+              <li><i class="fas fa-shopping-cart"></i>Cart</li>
+              <li>
+                <a href="account.html"><i class="fas fa-user"></i>Log In</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <a href="buygame.html"> <li>Gaming</li></a>
+          <li>Hardware</li>
+          <li>Software</li>
+          <a href="sellgame.html"> <li>Sell Games</li></a>
+          <li>Gift Cards</li>
+          <li><a href="about.html">More</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="buygame-paragraph">
+        <h1>GAME-TYPE</h1>
+        <h2>Have a game you don’t play anymore? Let someone else play.</h2>
+        <p>
+          Lorem ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry’s standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged.
+        </p>
+      </section>
+      <section class="filter-nav">
+        <div class="filter-nav1">
+          Show as<i class="fas fa-grip-lines"></i><i class="fas fa-th"></i>
+        </div>
+        <div class="filter-nav2">
+          <input
+            class="newgame"
+            type="checkbox"
+            id="newgame"
+            name="newgame"
+            value="newgame"
+          />New games
+        </div>
+        <div class="filter-nav3">
+          <input
+            class="usedgame"
+            type="checkbox"
+            id="usedgame"
+            name="usedgame"
+            value="usedgame"
+          />Used games
+        </div>
+        <div class="filter-nav4">
+          <input
+            class="instock"
+            type="checkbox"
+            id="instock"
+            name="instock"
+            value="instock"
+          />Show in stock only
+        </div>
+        <div class="filter-nav5">
+          <div class="sortby-box">
+            Sort by
+            <i class="fas fa-sort-amount-down-alt"></i>
+          </div>
+        </div>
+      </section>
+      <section class="buygame-container">
+        <div class="gamecard1">
+          <div class="gameimage1">
+            <img src="img/Image 2.jpg" />
+            <h3>World of Warcraft: Wrath of the Lich King</h3>
+            <!--todo need this positioned under the h3, not besides. How?-->
+            <!-- <h2>Windows / Mac</h2> -->
+            <div class="gameprice1"><img src="img/Pricing.svg" /></div>
+            <button class="buynow1">Buy Now</button>
+          </div>
+          <hr />
+        </div>
+        <div class="gamecard2">
+          <div class="gameimage2">
+            <img src="img/Image 2.jpg" />
+            <h3>World of Warcraft: Wrath of the Lich King</h3>
+            <div class="gameprice2"><img src="img/Pricing.svg" /></div>
+            <button class="buynow2">Buy Now</button>
+          </div>
+          <hr />
+          <!--todo Why does only the first HR tag show? Can you only use one?-->
+        </div>
+        <div class="gamecard3">
+          <div class="gameimage3">
+            <img src="img/Image 2.jpg" />
+            <h3>World of Warcraft: Wrath of the Lich King</h3>
+            <div class="gameprice3"><img src="img/Pricing.svg" /></div>
+            <button class="buynow3">Buy Now</button>
+          </div>
+          <hr />
+        </div>
+        <div class="gamecard4">
+          <div class="gameimage4">
+            <img src="img/Image 2.jpg" />
+            <h3>World of Warcraft: Wrath of the Lich King</h3>
+            <div class="gameprice4"><img src="img/Pricing.svg" /></div>
+            <button class="buynow4">Buy Now</button>
+          </div>
+          <hr />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="footer-top">
+        <div>
+          <a href="./index.html"> <img src="img/logo.png" /></a>
+        </div>
+        <p>Can't find what you are looking for?</p>
+        <input
+          class="searchbar-footer"
+          type="text"
+          placeholder="What are you searching for?…"
+        />
+      </section>
+      <section class="footer-bottom">
+        <ul class="footer-paragraph1">
+          <h3>You</h3>
+          <li><a href="account.html">Log In</a></li>
+          <li>Settings</li>
+          <li>Newsletter</li>
+          <br />
+        </ul>
+        <ul class="footer-paragraph2">
+          <h3>Info</h3>
+          <li>Terms & Conditions</li>
+          <li>Privacy & Cookies</li>
+          <li>Developer & Publisher</li>
+          <br />
+        </ul>
+        <ul class="footer-paragraph3">
+          <h3>Help</h3>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="/contact.html">Contact Us</a></li>
+          <li>Returns & Refunds</li>
+          <li>News</li>
+        </ul>
+        <div class="footer-logo">
+          <div><img src="img/WASD.png" /></div>
+          <div><img src="img/You’re my number one nerd!.png" /></div>
+          <div><img src="img/Component 36.png" /></div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
