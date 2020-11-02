@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="WASD.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/91d0eac963.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Welcome to WASD</title>
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <div class="header__content">
+          <a href="index.html">
+            <img src="img/logo.svg" alt="logo" />
+          </a>
+          <!-- TODO: Do I use absolute/relative do add the horoglass to the inside of my search bar? -->
+          <input
+            class="searchbar"
+            type="text"
+            placeholder="Red Dead Redemption 2, World of Warcraft, GTA…"
+          />
+          <div class="menu-actions">
+            <ul>
+              <li>
+                <a href="balance.html"
+                  ><i class="fas fa-euro-sign"></i>Balance</a
+                >
+              </li>
+              <li>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i>Cart</a>
+              </li>
+              <li>
+                <a href="login.html"><i class="fas fa-user"></i>Log In</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <a href="buygame.html"> <li>Gaming</li></a>
+          <a href="hardware.html"> <li>Hardware</li></a>
+          <a href="software.html"> <li>Software</li></a>
+          <a href="sellgame.html"> <li>Sell Games</li></a>
+          <a href="about.html"><li>More</li></a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="checkout-container">
+        <h1 class="checkout-h1">Checkout</h1>
+        <p class="checkout-headlines">Cardholders name</p>
+        <input class="checkout-cardholder-name-input" type="text" name="cardholder-name" />
+        <p class="checkout-headlines">Card number</p>
+        <input class="checkout-card-number-input" type="text" name="card-number" />
+        
+        
+        <p class="checkout-cvv-headline">CVV</p>
+        <input class="checkout-cvv-input" type="text" name="cvv" />
+        
+        <p class="checkout-date-headline">Expiration date</p>
+        <input class="checkout-date-input" type="date" name="date" />
+   
+        <a href="success.html"><button>Checkout</button></a>
+        <div class="sign-up-card-version">
+          <p>Not a member yet?<a href="register.html" class="sign-up-here-text">Sign up here</div></p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="footer-top">
+        <div>
+          <a href="./index.html"> <img src="img/logo.png" /></a>
+        </div>
+        <p>Can't find what you are looking for?</p>
+        <input
+          class="searchbar-footer"
+          type="text"
+          placeholder="What are you searching for?…"
+        />
+      </section>
+      <section class="footer-bottom">
+        <ul class="footer-paragraph1">
+          <h3>You</h3>
+          <li><a href="login.html">Log In</a></li>
+          <li><a href="account.html">Settings</a></li>
+          <li>Newsletter</li>
+          <br />
+        </ul>
+        <ul class="footer-paragraph2">
+          <h3>Info</h3>
+          <li>Terms & Conditions</li>
+          <li>Privacy & Cookies</li>
+          <li>Developer & Publisher</li>
+          <br />
+        </ul>
+        <ul class="footer-paragraph3">
+          <h3>Help</h3>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li>Returns & Refunds</li>
+          <li>News</li>
+        </ul>
+        <div class="footer-logo">
+          <div><img src="img/WASD.png" /></div>
+          <div><img src="img/You’re my number one nerd!.png" /></div>
+          <div><img src="img/Component 36.png" /></div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
