@@ -234,7 +234,7 @@ h1 {
 
 .genere-h2 {
   text-align: center;
-  opacity: 80%;
+  color: #4a5568;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1%;
@@ -248,7 +248,7 @@ a {
 
 .trending-game-h2 {
   text-align: center;
-  opacity: 80%;
+  color: #4a5568;
   font-size: 2rem;
   font-weight: 700;
   margin-top: 3%;
@@ -269,7 +269,7 @@ a {
   background-color: white;
 }
 .game-menu i {
-  font-size: 150px;
+  font-size: 6rem;
 }
 
 .game-menu div {
@@ -421,7 +421,7 @@ a {
 
 .user-review-h2 {
   text-align: center;
-  opacity: 80%;
+  color: #4a5568;
   font-size: 2rem;
   font-weight: 700;
 }
@@ -433,6 +433,7 @@ a {
   align-items: center;
   column-gap: 100px;
   background-color: white;
+  color: #4a5568;
   width: 100%;
   height: 600px;
   font-size: 20px;
@@ -531,10 +532,10 @@ footer {
 /* SELL GAME SECTION  */
 .sellgame-container {
   display: flex;
-  flex-direction: column;
-  width: 100%;
+  flex-direction: row;
+  width: 64%;
   background-color: #f5f5f5;
-  position: relative;
+  margin-right: 8.7%;
 }
 
 .sellgame-banner {
@@ -553,94 +554,78 @@ main .sellgame-banner h2 {
   font-size: 2rem;
 }
 
-.breadcrum {
-  position: relative;
-  left: 390px;
-  bottom: 40px;
-  margin-bottom: 20px;
-}
-.form-headlines {
-  position: relative;
-  left: 390px;
-  font-size: 20px;
-}
-.condition-headline {
-  position: relative;
-  left: 730px;
-  bottom: 140px;
-  font-size: 20px;
-}
-.sellgame-container h1 {
-  width: 475px;
-  font-size: 50px;
-  position: relative;
-  left: 390px;
-  margin-bottom: 30px;
+.sell-game-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: #4a5568;
 }
 
+.form-headlines {
+  font-size: 1rem;
+}
+.condition-headline {
+  font-size: 1rem;
+}
+.sellgame-container h1 {
+  font-size: 3rem;
+}
+
+.sell-game-info-area {
+  display: flex;
+  flex-direction: column;
+  width: 64%;
+}
 .description-paragraph {
   font-size: 16px;
-  width: 1120px;
-  align-self: center;
+  width: 100%;
 }
 .description-headline {
-  font-size: 20px;
-  position: relative;
-  left: 950px;
-  bottom: 432px;
+  font-size: 1rem;
+  margin: 2%;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
-.sellgame-container h2 {
-  width: 550px;
-  position: relative;
-  left: 390px;
-}
+
 .gametitle-input {
   width: 520px;
   height: 70px;
-  position: relative;
-  left: 390px;
   border-radius: 5px;
 }
 .gametype-input {
   width: 300px;
   height: 70px;
-  position: relative;
-  left: 390px;
   border-radius: 5px;
 }
 
 .condition-input {
   width: 180px;
   height: 70px;
-  position: relative;
-  left: 730px;
-  bottom: 144px;
   border-radius: 5px;
 }
 
 .description-input {
-  width: 535px;
-  height: 280px;
+  width: 100%;
+  height: 70%;
   border-radius: 5px;
-  position: relative;
-  left: 950px;
-  bottom: 410px;
   border: none;
+  margin-left: 2%;
+  margin-top: none;
+}
+
+.sell-game-descrition-area {
+  display: flex;
 }
 
 .price-input {
   width: 200px;
   height: 70px;
-  position: relative;
-  left: 390px;
-  bottom: 412px;
 }
 
 .price-headline {
-  position: relative;
-  left: 390px;
-  bottom: 400px;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .publish-game-button {
@@ -651,9 +636,68 @@ main .sellgame-banner h2 {
   border: none;
   border-radius: 5px;
   font-weight: bold;
-  position: relative;
-  bottom: 484px;
-  left: 1050px;
+}
+
+/* ACCOUNT PAGE */
+
+.account-container {
+  display: flex;
+  flex-direction: row;
+  width: 69%;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 3%;
+  padding-bottom: 5%;
+  color: #4a5568;
+}
+.account-h1 {
+  margin-left: 15.2%;
+  margin-top: 2%;
+}
+.account-h2 {
+  color: #4a5568;
+}
+.avatar-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 15.5%;
+}
+.account-left-container {
+  display: flex;
+  flex-direction: column;
+}
+.avatar {
+  background-color: #f5f5f5;
+  border-radius: 180px;
+  margin-right: 1rem;
+}
+.account-right-container {
+  display: flex;
+  flex-direction: column;
+}
+.number-input {
+  width: 520px;
+  height: 70px;
+}
+
+.street-name-input {
+  width: 520px;
+  height: 70px;
+}
+.city-town-input {
+  width: 520px;
+  height: 70px;
+}
+.country-input {
+  width: 520px;
+  height: 70px;
+}
+
+.account-save-button {
+  width: 200px;
+  height: 50px;
+  background-color: #1a202c;
+  margin-left: 0%;
 }
 
 /* CONTACT US */
@@ -678,7 +722,8 @@ main .sellgame-banner h2 {
   display: grid;
   grid-area: box3;
   height: 500px;
-  margin-top: 33%;
+  margin-top: 40%;
+  margin-bottom: 10%;
 }
 
 .message-input {
@@ -715,7 +760,6 @@ main .sellgame-banner h2 {
 .name-input {
   width: 520px;
   height: 70px;
-  color: white;
 }
 
 .email-input {
@@ -732,39 +776,40 @@ main .sellgame-banner h2 {
 /* ABOUT US  */
 
 .about-container {
-  width: 1400px;
-  height: 900px;
+  width: 80%;
   display: grid;
   grid-template-areas:
     "box1 box1 box1 box2 box2 box2"
     "box3 box3 box4 box4 box5 box5";
   margin: auto;
-  margin-top: 100px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  justify-items: center;
+  color: #4a5568;
 }
 
 .aboutus {
   grid-area: box1;
+  width: 70%;
 }
 
 .ourgoals {
   grid-area: box2;
+  width: 70%;
 }
 
 .about-oslo {
-  width: 466.66px;
-  height: 500px;
+  width: 100%;
   grid-area: box3;
 }
 
 .about-banjul {
-  width: 466.66px;
-  height: 500px;
+  width: 100%;
   grid-area: box4;
 }
 
 .about-amsterdam {
-  width: 466.66px;
-  height: 500px;
+  width: 100%;
   grid-area: box5;
 }
 
@@ -781,14 +826,6 @@ h3 {
   font-size: 30px;
 }
 
-/* ACCOUNT-PAGE*/
-.account-container {
-  display: grid;
-  background-color: #f5f5f5;
-  width: 100%;
-  height: 500px;
-}
-
 /* BUYGAME-PAGE */
 
 .buygame-container {
@@ -800,11 +837,12 @@ h3 {
 }
 
 .buygame-paragraph {
-  width: 700px;
-  height: 500px;
+  width: 62%;
   display: flex;
   flex-direction: column;
-  margin-left: 19%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
   background-color: #f5f5f5;
 }
 .buygame-paragraph h2 {
@@ -838,6 +876,7 @@ hr {
   display: grid;
   grid-template-areas: "box1 box2 box3 box4 box5";
   align-items: center;
+  color: #4a5568;
   font-size: 16px;
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
   border: #707070 solid 1px;
@@ -963,7 +1002,7 @@ hr {
 }
 
 .buygame-container h2 {
-  color: #707070;
+  color: #4a5568;
 }
 
 .quantity-picker-container button {
@@ -1082,7 +1121,7 @@ hr {
 /* GAMEPAGE */
 
 .gamepage-h1 {
-  color: #707070;
+  color: #4a5568;
   font-size: 3rem;
   margin-top: 10%;
   margin-bottom: 3%;

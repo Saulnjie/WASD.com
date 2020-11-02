@@ -59,82 +59,87 @@
           <button>REGISTER</button>
         </div>
       </section>
-      <section class="sellgame-container">
-        <p class="breadcrum">Home > MyAccount > Sell Game</p>
-        <h1>Sell your old game</h1>
-        <h3>Have a game you don’t play anymore? Let someone else play.</h3>
-        <p class="description-paragraph">
-          Lorem ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry’s standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged.
-        </p>
-        <h2>
-          Please fill in some information about the game you wish to sell in the
-          form below
-        </h2>
+      <div class="sell-game-wrapper">
+        <div class="sell-game-info-area">
+          <h1>Sell your old game</h1>
+          <h3>Have a game you don’t play anymore? Let someone else play.</h3>
+          <p class="description-paragraph">
+            Lorem ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry’s standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged.
+          </p>
+          <h2>
+            Please fill in some information about the game you wish to sell in
+            the form below
+          </h2>
+        </div>
+        <section class="sellgame-container">
+          <div class="sell-game-form-area">
+            <p class="form-headlines">Game title</p>
+            <input class="gametitle-input" type="text" name="title" />
 
-        <p class="form-headlines">Game title</p>
-        <input class="gametitle-input" type="text" name="title" />
-
-        <label>
-          <p class="form-headlines">Type of game:</p>
-          <input
-            class="gametype-input"
-            type="text"
-            name="gametype"
-            list="gametype"
-          />
-          <datalist id="gametype">
             <label>
-              or select one from the list:
-              <select name="gametype">
-                <option value="MMO-RPG"></option>
-                <option value="FPS"></option>
-                <option value="Sport"></option>
-                <option value="RP"></option>
-                <option value="Adventure"></option>
-              </select>
+              <p class="form-headlines">Type of game:</p>
+              <input
+                class="gametype-input"
+                type="text"
+                name="gametype"
+                list="gametype"
+              />
+              <datalist id="gametype">
+                <label>
+                  or select one from the list:
+                  <select name="gametype">
+                    <option value="MMO-RPG"></option>
+                    <option value="FPS"></option>
+                    <option value="Sport"></option>
+                    <option value="RP"></option>
+                    <option value="Adventure"></option>
+                  </select>
+                </label>
+              </datalist>
             </label>
-          </datalist>
-        </label>
-
-        <label>
-          <p class="condition-headline">Condition:</p>
-          <input
-            class="condition-input"
-            type="text"
-            name="condition"
-            list="condition"
-          />
-          <datalist id="condition">
             <label>
-              or select one from the list:
-              <select name="condition">
-                <option value="Poor"></option>
-                <option value="Decent"></option>
-                <option value="Excelent"></option>
-              </select>
+              <p class="condition-headline">Condition:</p>
+              <input
+                class="condition-input"
+                type="text"
+                name="condition"
+                list="condition"
+              />
+              <!--todo: How do I move dontition input besides type of game?-->
+              <datalist id="condition">
+                <label>
+                  or select one from the list:
+                  <select name="condition">
+                    <option value="Poor"></option>
+                    <option value="Decent"></option>
+                    <option value="Excelent"></option>
+                  </select>
+                </label>
+              </datalist>
             </label>
-          </datalist>
-        </label>
-        <!--TODO how do I remove border from these lables-->
-        <p class="description-headline">Description</p>
-        <textarea
-          class="description-input"
-          id="description"
-          name="description"
-          rows="4"
-          cols="50"
-        ></textarea>
-        <!--TODO how do I change font size for this box?-->
-
-        <p class="price-headline">Desired price</p>
-        <input class="price-input" type="text" name="price" />
-        <button class="publish-game-button">PUBLISH GAME</button>
-      </section>
+            <p class="price-headline">Desired price</p>
+            <input class="price-input" type="text" name="price" />
+            <button class="publish-game-button">PUBLISH GAME</button>
+            <!--TODO how do I remove border from these lables-->
+          </div>
+          <div class="sell-game-description-area">
+            <p class="description-headline">Description</p>
+            <textarea
+              class="description-input"
+              id="description"
+              name="description"
+              rows="4"
+              cols="50"
+            ></textarea>
+          </div>
+          <!--TODO how do I change font size for this box?-->
+        </section>
+      </div>
     </main>
     <footer>
       <section class="footer-top">
@@ -152,7 +157,7 @@
         <ul class="footer-paragraph1">
           <h3>You</h3>
           <li><a href="account.html">Log In</a></li>
-          <li>Settings</li>
+          <li><a href="account.html">Settings</a></li>
           <li>Newsletter</li>
           <br />
         </ul>
