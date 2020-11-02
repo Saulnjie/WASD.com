@@ -193,7 +193,7 @@ h1 {
   color: white;
   font-weight: bold;
   justify-content: flex-start;
-
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
   animation-name: slider;
   animation-duration: 30s;
   animation-iteration-count: infinite;
@@ -542,7 +542,7 @@ footer {
   display: flex;
   align-items: flex-end;
   background-image: url("../img/alexander-andrews-TPH3q6202qA-unsplash.jpg");
-  background-position: 0% 17%;
+  background-position: 45% 17%;
   width: 100%;
   height: 400px;
   flex-direction: column;
@@ -746,7 +746,7 @@ main .sellgame-banner h2 {
   flex-direction: column;
 }
 .contact-paragraph {
-  width: 700px;
+  width: 92%;
 }
 
 .contact-image {
@@ -796,21 +796,25 @@ main .sellgame-banner h2 {
 .ourgoals {
   grid-area: box2;
   width: 70%;
+  margin-bottom: 5%;
 }
 
 .about-oslo {
-  width: 100%;
+  width: 80%;
   grid-area: box3;
+  margin-left: auto;
 }
 
 .about-banjul {
-  width: 100%;
+  width: 80%;
   grid-area: box4;
+  margin-left: 40%;
 }
 
 .about-amsterdam {
-  width: 100%;
+  width: 70%;
   grid-area: box5;
+  margin-left: auto;
 }
 
 .aboutus-title {
@@ -1097,7 +1101,6 @@ hr {
 .trending-game-button-container .instock {
   font-size: 10px;
   width: 100%;
-  margin-right: 20px;
   height: auto;
   text-align: end;
 }
@@ -1158,6 +1161,10 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.gamepage-button {
+  margin-top: 2%;
 }
 
 .gamepage-rating .fa-star {
