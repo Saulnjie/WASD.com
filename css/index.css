@@ -535,7 +535,7 @@ footer {
   flex-direction: row;
   width: 64%;
   background-color: #f5f5f5;
-  margin-right: 8.7%;
+  margin-right: 10%;
 }
 
 .sellgame-banner {
@@ -576,7 +576,7 @@ main .sellgame-banner h2 {
 .sell-game-info-area {
   display: flex;
   flex-direction: column;
-  width: 64%;
+  width: 59.7%;
 }
 .description-paragraph {
   font-size: 16px;
@@ -995,8 +995,8 @@ hr {
   align-self: flex-start;
 }
 
-.game-price img {
-  height: 60px;
+.game-price {
+  font-size: 2rem;
 }
 
 .buy-container {
@@ -1123,6 +1123,17 @@ hr {
 }
 .trending-game-rating {
   margin-left: 10px;
+}
+
+/* HARDWARE PAGE */
+
+.headset-price {
+  font-size: 2rem;
+}
+
+/* SOFTWARE PAGE */
+.windows-price {
+  font-size: 2rem;
 }
 
 /* GAMEPAGE */
