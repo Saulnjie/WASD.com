@@ -993,6 +993,7 @@ hr {
 .game-image-container {
   display: flex;
   align-self: flex-start;
+  width: 100%;
 }
 
 .game-price {
@@ -1034,6 +1035,7 @@ hr {
 .info-container {
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 .stock-and-quantity {
